@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import header from './component/header';
-import body from './component/body';
-import footer from './component/footer';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Component
+import Header from './component/Header'
+import Body from './component/Body';
+import Footer from './component/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <>
-    <header></header>
-    <body></body>
-    <footer></footer>
+    <Header></Header>
+    <Body></Body>
+    <Footer></Footer>
   </>
 
 );

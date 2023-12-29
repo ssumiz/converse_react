@@ -1,11 +1,16 @@
 import React from 'react';
 
-function body(props) {
+import Video from './body/Video';
+import Main from './body/Main';
+
+function Body(props) {
     return (
         <div>
-            
+            <Video></Video>
+
+            <Main></Main>
         </div>
     );
 }
 
-export default body;
+export default Body;
