@@ -4,6 +4,9 @@ import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+//fontSource
+import "@fontsource/ubuntu/700.css"
+
 // Component
 import Header from './component/Header'
 import Body from './component/Body';
