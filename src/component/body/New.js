@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 import Style from '../../sass/body/New.module.scss'
 import styled from 'styled-components';
 
+import { CircleFill } from 'react-bootstrap-icons';
+
+// data
+import Data from "../../data/data.json"
+
 
 const ItemDiv = styled.div`
     
@@ -10,7 +15,10 @@ const ItemDiv = styled.div`
     overflow: ${props => props.overflow || "hidden"};
     margin : 0;
     margin-bottom : 2rem;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
 `
 
 function New(props) {
@@ -24,24 +32,6 @@ function New(props) {
         false
     ]);
 
-    const imgOrg = [
-        "img/new1_1.png",
-        "img/new2_1.jpg",
-        "img/new3_1.jpg",
-        "img/new4_1.png",
-        "img/new5_1.jpg",
-        "img/new6_1.jpg",
-    ];
-
-    const imgHover = [
-        "img/new1_2.png",
-        "img/new2_2.jpg",
-        "img/new3_2.jpg",
-        "img/new4_2.png",
-        "img/new5_2.jpg",
-        "img/new6_2.jpg",
-    ];
-
     const changeState =(index, state)=>{
 
         let copy = [ ...isMouseOver];
@@ -52,23 +42,33 @@ function New(props) {
 
     }
 
+
+
    
 
     return (
         <div className={Style.container}>
             <div className ="mb-5 h1">New</div>
             
-            <div className ="row w-75">
+            <div className ="row" style={{width:"80%"}}>
                 
-                <ItemDiv className="item col-4 position-relative">
-                    <p className={`${Style.itemDesc}`}>Chuck70 Vintage Canverse Green</p>
-                    <img src={isMouseOver[0] ? imgHover[0] : imgOrg[0]} alt="" className={`${Style.imgSrc} ${isMouseOver[0] ? Style.hover: ''} `} onMouseOver={()=>changeState(0, true)} onMouseLeave={()=>changeState(0,false)}/>
-                </ItemDiv>
-                <ItemDiv className="item col-4"><img src={isMouseOver[1] ? imgHover[1] : imgOrg[1]} alt="" className={`${Style.imgSrc} ${isMouseOver[1] ? Style.hover: ''} `} onMouseOver={()=>changeState(1, true)} onMouseLeave={()=>changeState(1,false)}/></ItemDiv>
-                <ItemDiv className="item col-4"><img src={isMouseOver[2] ? imgHover[2] : imgOrg[2]} alt="" className={`${Style.imgSrc} ${isMouseOver[2] ? Style.hover: ''} `} onMouseOver={()=>changeState(2, true)} onMouseLeave={()=>changeState(2,false)}/></ItemDiv>
-                <ItemDiv className="item col-4"><img src={isMouseOver[3] ? imgHover[3] : imgOrg[3]} alt="" className={`${Style.imgSrc} ${isMouseOver[3] ? Style.hover: ''} `} onMouseOver={()=>changeState(3, true)} onMouseLeave={()=>changeState(3,false)}/></ItemDiv>
-                <ItemDiv className="item col-4"><img src={isMouseOver[4] ? imgHover[4] : imgOrg[4]} alt="" className={`${Style.imgSrc} ${isMouseOver[4] ? Style.hover: ''} `} onMouseOver={()=>changeState(4, true)} onMouseLeave={()=>changeState(4,false)}/></ItemDiv>
-                <ItemDiv className="item col-4"><img src={isMouseOver[5] ? imgHover[5] : imgOrg[5]} alt="" className={`${Style.imgSrc} ${isMouseOver[5] ? Style.hover: ''} `} onMouseOver={()=>changeState(5, true)} onMouseLeave={()=>changeState(5,false)}/></ItemDiv>
+                {
+                    Data.New.map((val, idx)=>{
+
+
+                        return(
+
+                            <ItemDiv className="item col-12 col-sm-6 col-md-4 position-relative" key={`NewItemKey${idx}`}>
+                                <img src={isMouseOver[idx] ? Data.New[idx].imgHoverSrc : Data.New[idx].imgOrgSrc} alt="" className={`${Style.imgSrc} ${isMouseOver[idx] ? Style.hover: ''} `} onMouseOver={()=>changeState(idx, true)} onMouseLeave={()=>changeState(idx,false)}/>
+                                <p className={`${Style.itemDesc}`} style={{ color : isMouseOver[idx]? Data.New[idx].color : "#000"}}>{Data.New[idx].itemName}</p>
+                                <p className={`${Style.itemDesc} mb-0`} style={{ color : isMouseOver[idx]? Data.New[idx].color : "#000"}}>{Data.New[idx].itemPrice}</p>
+                             </ItemDiv>
+
+                        )
+                    })
+                }
+                
+
             </div>
 
 
