@@ -12,6 +12,9 @@ import Header from './component/Header'
 import Body from './component/Body';
 import Footer from './component/Footer';
 
+// Import Swiper styles
+import 'swiper/css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
