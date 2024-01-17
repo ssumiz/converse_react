@@ -50,6 +50,24 @@
         }
     
     
+    ],
+
+    "ImgSwiper":[
+
+        {
+            "itemIndex":1,
+            "imgOrgSrc":"img/swiper1_1.jpg"
+        },
+        {
+            "itemIndex":2,
+            "imgOrgSrc":"img/swiper3.png"
+        },
+        {
+            "itemIndex":3,
+            "imgOrgSrc":"img/swiper4_1.png"
+        }
+        
+
     ]
     
 

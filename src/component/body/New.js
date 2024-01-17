@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Style from '../../sass/body/New.module.scss'
 import styled from 'styled-components';
 
-import { CircleFill } from 'react-bootstrap-icons';
+//import { CircleFill } from 'react-bootstrap-icons';
 
 // data
 import Data from "../../data/data.json"
