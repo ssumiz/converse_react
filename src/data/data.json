@@ -56,7 +56,7 @@
 
         {
             "itemIndex":1,
-            "imgOrgSrc":"img/swiper1_1.jpg"
+            "imgOrgSrc":"img/swiper5.png"
         },
         {
             "itemIndex":2,
@@ -68,6 +68,16 @@
         }
         
 
+    ],
+
+    "Draw":[
+
+        {
+            "imgOrgSrc":"img/draw2.jpg",
+            "item":"Converse X ADERERROR Chuck 70 High White",
+            "price":"175,000"
+
+        }
     ]
     
 

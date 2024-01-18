@@ -18,10 +18,10 @@ const SwiperImg = styled.img`
 
 function ImgSwiper(props) {
     return (
-        <div className="mt-5 mb-5 justify-content-center d-flex align-items-center flex-row">
+        <div className="mt-15 mb-5 justify-content-center d-flex align-items-center flex-row bg-black">
             <Swiper
                 modules={ [Autoplay, EffectFade] }
-                
+                centeredSlides={true}
                 spaceBetween={50}
                 slidesPerView = {1}
                 onSlideChange={()=>{}}
@@ -35,7 +35,8 @@ function ImgSwiper(props) {
                     disableOnInteraction: false
                 }}
                 loop={true}
-                className={`${Style.imgSwiper}`}
+                className={`${Style.imgSwiper} justify-content-center d-flex align-items-center flex-column`}
+                wrapperClass={Style.swiperWrapper}
             >
                 {
                     Data.ImgSwiper.map((val,idx) => {
