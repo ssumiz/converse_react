@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+.mt-10{
+  margin-top: 100px !important;
+}
+
 .mt-15{
   margin-top: 150px !important;
 }
+
