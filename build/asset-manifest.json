@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d24da4fa.css",
+    "main.js": "/static/js/main.41834037.js",
+    "static/media/ubuntu-latin-ext-700-normal.woff2": "/static/media/ubuntu-latin-ext-700-normal.195e8846659378454b5e.woff2",
+    "static/media/ubuntu-latin-700-normal.woff2": "/static/media/ubuntu-latin-700-normal.7ceec6fd3e7d00630b25.woff2",
+    "static/media/ubuntu-latin-ext-700-normal.woff": "/static/media/ubuntu-latin-ext-700-normal.b7944bcbe364d16a3271.woff",
+    "static/media/ubuntu-cyrillic-ext-700-normal.woff2": "/static/media/ubuntu-cyrillic-ext-700-normal.14321031e27c465731aa.woff2",
+    "static/media/ubuntu-latin-700-normal.woff": "/static/media/ubuntu-latin-700-normal.1495fd5531868adfe13b.woff",
+    "static/media/ubuntu-cyrillic-700-normal.woff2": "/static/media/ubuntu-cyrillic-700-normal.fad9440ec2b1bc4ee9f5.woff2",
+    "static/media/ubuntu-greek-ext-700-normal.woff2": "/static/media/ubuntu-greek-ext-700-normal.fdaa9645b54f6bd666f9.woff2",
+    "static/media/ubuntu-greek-700-normal.woff2": "/static/media/ubuntu-greek-700-normal.debd2fb62678f7a002e4.woff2",
+    "static/media/ubuntu-cyrillic-ext-700-normal.woff": "/static/media/ubuntu-cyrillic-ext-700-normal.03d11788110a49b9eb65.woff",
+    "static/media/ubuntu-cyrillic-700-normal.woff": "/static/media/ubuntu-cyrillic-700-normal.9e5bf636007bce67bb9f.woff",
+    "static/media/ubuntu-greek-700-normal.woff": "/static/media/ubuntu-greek-700-normal.f5cc162a150d85bd922d.woff",
+    "static/media/ubuntu-greek-ext-700-normal.woff": "/static/media/ubuntu-greek-ext-700-normal.3e80660b5eb38b18b75e.woff",
+    "index.html": "/index.html",
+    "main.d24da4fa.css.map": "/static/css/main.d24da4fa.css.map",
+    "main.41834037.js.map": "/static/js/main.41834037.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d24da4fa.css",
+    "static/js/main.41834037.js"
+  ]
+}
