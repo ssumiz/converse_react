@@ -1,0 +1,11 @@
+.fixed{
+    position: fixed;
+    top:0;
+    height:75px;
+    left:0;
+    right:0;
+    z-index: 99;
+    background-color: black;
+    margin:0 !important;
+    transition: 0.3s;
+}

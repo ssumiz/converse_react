@@ -14,8 +14,8 @@ function Draw(props) {
                 <div className='col-6'>
                     <img src={Data.Draw[0].imgOrgSrc} alt="" style={{width:"20vw"}}/>
                     <div>
-                        <p className='mt-5'>{Data.Draw[0].item}</p>
-                        <p>{Data.Draw[0].price}</p>
+                        <p className='mt-5'><strong>{Data.Draw[0].item}</strong></p>
+                        <p><strong>{Data.Draw[0].price}</strong></p>
                     </div>
                 </div>
                 <div className='col-6 d-flex flex-column justify-content-center gap-5 align-items-center' style={{width:"25rem"}}>
@@ -32,7 +32,7 @@ function Draw(props) {
                         <TextField id= "standard-basic" variant="standard"></TextField>
                     </div>
                     
-                    <Button variant='contained' style={{width:"10vw"}} className='mt-10'>submit</Button>
+                    <Button variant='outlined' style={{width:"10vw", fontFamily:"Pretendard Variable"}} className='mt-10'>응모하기</Button>
                     
                 </div>
             </div>

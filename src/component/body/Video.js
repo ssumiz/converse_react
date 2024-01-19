@@ -8,7 +8,7 @@ function Video(props) {
             <Iframe
                 src="https://player.vimeo.com/video/717690017?autoplay=1&loop=1&muted=1"
                 width="100%"
-                height="1280px"
+                height="750vh"
                 display='block'
                 position='relative'
                 allow='autoplay; fullscreen'
