@@ -28,10 +28,10 @@ function Main(props) {
         setStatThird(!bool);
 
         if( bool ){
-            refImgThird.current.classList.add();
+            // refImgThird.current.classList.add();
         }
         else{
-            refImgThird.current.classList.remove();
+            // refImgThird.current.classList.remove();
         }
     });
 

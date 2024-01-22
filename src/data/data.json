@@ -12,39 +12,39 @@
             "itemIndex":1,
             "imgOrgSrc":"img/new2_1.jpg",
             "imgHoverSrc": "img/new2_2.jpg",
-            "itemName":"Chuck70 Vintage Converse Green",
-            "itemPrice":"KRW 98,000",
+            "itemName":"OneStar Pro Classic Violet",
+            "itemPrice":"KRW 109,000",
             "color":"#d6bdc1"
         },
         {   
             "itemIndex":2,
             "imgOrgSrc":"img/new3_1.jpg",
             "imgHoverSrc": "img/new3_2.jpg",
-            "itemName":"Chuck70 Vintage Converse Green",
-            "itemPrice":"KRW 98,000",
+            "itemName":"OneStar Foundational Black",
+            "itemPrice":"KRW 79,200",
             "color":"#131412"
         },
         {   
             "itemIndex":3,
             "imgOrgSrc":"img/new4_1.png",
             "imgHoverSrc": "img/new4_2.png",
-            "itemName":"Chuck70 Vintage Converse Green",
-            "itemPrice":"KRW 98,000",
+            "itemName":"Chuck70 Vintage Converse Blue",
+            "itemPrice":"KRW 89,000",
             "color":"#0366dd"
         },
         {   
             "itemIndex":4,
             "imgOrgSrc":"img/new5_1.jpg",
             "imgHoverSrc": "img/new5_2.jpg",
-            "itemName":"Chuck70 Vintage Converse Green",
-            "itemPrice":"KRW 98,000",
+            "itemName":"Chuck70 Vintage Converse Iconic",
+            "itemPrice":"KRW 89,000",
             "color":"#e2e7e3"
         },
         {   
             "itemIndex":5,
             "imgOrgSrc":"img/new6_1.jpg",
             "imgHoverSrc": "img/new6_2.jpg",
-            "itemName":"Chuck70 Vintage Converse Green",
+            "itemName":"Chuck70 Allstar Swade Beach Stone",
             "itemPrice":"KRW 98,000",
             "color":"#cabca2"
         }
@@ -72,7 +72,8 @@
 
     "Draw":[
 
-        {
+        {   
+            "itemIndex":1,
             "imgOrgSrc":"img/draw2.jpg",
             "item":"Converse X ADERERROR Chuck 70 High White",
             "price":"175,000"

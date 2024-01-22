@@ -5,6 +5,7 @@ import Main from './body/Main';
 import New from './body/New';
 import ImgSwiper from './body/ImgSwiper';
 import Draw from './body/Draw';
+import StoreInfo from './body/StoreInfo';
 
 function Body(props) {
     return (
@@ -18,6 +19,8 @@ function Body(props) {
             <ImgSwiper></ImgSwiper>
 
             <Draw></Draw>
+
+            <StoreInfo></StoreInfo>
         </div>
     );
 }
