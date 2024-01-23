@@ -79,6 +79,69 @@
             "price":"175,000"
 
         }
+    ],
+
+    "Store_info":[
+        {
+            "itemIndex":0,
+            "store_title":"홍대점",
+            "store_addreess":"서울특별시 마포구 홍익로6길 22",
+            "store_contact":"02-6952-1908",
+            "store_LatLng":[
+                37.5629677,
+                126.9845302
+            ]
+        },
+        {
+            "itemIndex":1,
+            "store_title":"신세계백화점 강남점",
+            "store_addreess":"서울 서초구 신반포로 176 신세계백화점 지하1층 파미에스트리트 컨버스",
+            "store_contact":"02-3479-1827",
+            "store_LatLng":[
+                37.5039351769908,
+                127.002413006799
+            ]
+        },
+        {
+            "itemIndex":2,
+            "store_title":"아이파크몰점",
+            "store_addreess":"서울 용산구 한강대로23길 55 아이파크몰 6F",
+            "store_contact":"02-2012-4690",
+            "store_LatLng":[
+                37.5297718014452,
+                126.964741503485
+            ]
+        },
+        {
+            "itemIndex":3,
+            "store_title":"타임스트림점",
+            "store_addreess":"서울 관악구 신림로 330",
+            "store_contact":"0507-1396-3648",
+            "store_LatLng":[
+                37.4838513393186,
+                126.930234545397
+            ]
+        },
+        {
+            "itemIndex":4,
+            "store_title":"엔터식스안양점",
+            "store_addreess":"경기 안양시 만안구 만안로 232 엔터식스 4층 컨버스",
+            "store_contact":"0507-1344-6234",
+            "store_LatLng":[
+                37.4014349994721,
+                126.92300270344
+            ]
+        },
+        {
+            "itemIndex":5,
+            "store_title":"롯데월드몰점",
+            "store_addreess":"서울 송파구 올림픽로 300 지하1층",
+            "store_contact":"02-3213-4717",
+            "store_LatLng":[
+                37.5137129859207,
+                127.104301829165
+            ]
+        }
     ]
     
 
