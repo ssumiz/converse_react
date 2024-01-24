@@ -13,9 +13,23 @@ function StoreInfo(props) {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
 
+    const [mapLevel, setMapLevel] = useState(8);
+
+    const [searchText, setSearchText] = useState("");
+
+    const refSearchTag = useRef();
+
     const listItemClick= (idx) =>{
         setSelectedIndex(idx);
+
+        setMapLevel(3);
     };
+
+    const activeEnter = (e) =>{
+        if(e.key === "Enter"){
+            onClickSearchIcon(refSearchTag.current.value);
+        }
+    }
 
     useEffect(()=>{
         const container = document.getElementById('map');
@@ -41,9 +55,14 @@ function StoreInfo(props) {
             markPos.push(data);
        }
 
+
+       // Map Level 변경
+       map.setLevel(mapLevel);
+
        // Map 이동
        map.panTo(markPos[selectedIndex].latlng);
-    //    console.log( `index ${selectedIndex}`);
+       
+    
        
 
        for( var j = 0; j< markPos.length; j++)
@@ -89,24 +108,31 @@ function StoreInfo(props) {
 
        
 
-    }, [selectedIndex])
+    }, [selectedIndex, mapLevel])
 
+    function onClickSearchIcon( searchText ){
+
+        setSearchText(searchText);
+
+    }
 
     return (
-        <div className={`${Style.container} mt-5 mb-5`}>
+        <div className={`${Style.container} mt-15 mb-15`}>
             <div className ="mt-5 mb-5 h1">Store Info</div>
 
             <div className='mt-5 justify-content-center d-flex align-items-center flex-row text-center gap-5'>
                 <div className="col-6">
                     <div>
-                        
                         <InputBase
                         className='ms-4'
                         placeholder=' 주소 또는 매장명 입력'
                         inputProps={{'aria-label' : 'search'}}
                         style={{backgroundColor:"white" , borderBottom : "1px solid black" , width: "20vw"}}
-                        ></InputBase>
-                        <SearchIcon/>
+                        inputRef={refSearchTag}
+                        onKeyDown={(e)=>{activeEnter(e)}}
+                        >
+                        </InputBase>
+                        <SearchIcon className="ms-2" onClick={ ()=>{onClickSearchIcon(refSearchTag.current.value)}} style={{cursor:"pointer"}}/>
                     </div>
                     <div className='mt-5 justify-content-center d-flex align-items-center' >
                         <Tabs
@@ -120,23 +146,28 @@ function StoreInfo(props) {
                             {
                                 Data.Store_info.map((val,idx)=>{
 
-                                    return(
-
-                                        <ListItemButton
-                                            selected={selectedIndex === val.itemIndex}
-                                            onClick={()=> listItemClick(val.itemIndex)}
-                                            style={{ borderTop : "1px solid black" }}
-                                        >
-                                            <ListItemText
-                                                style={{textSize: "20px"}}
+                                    if( searchText === "" || (val.store_title.indexOf(searchText) !== -1) 
+                                    || (val.store_addreess.indexOf(searchText) !== -1))
+                                    {
+                                        return(
+                                        
+                                            <ListItemButton
+                                                selected={selectedIndex === val.itemIndex}
+                                                onClick={()=> listItemClick(val.itemIndex)}
+                                                style={{ borderTop : "1px solid black" }}
                                             >
-                                                <h5 className="mb-3"><strong>{val.store_title}</strong></h5>
-                                                <p>{val.store_addreess}</p>
-                                                <p>{val.store_contact}</p>
-                                            </ListItemText>
-                                          
-                                        </ListItemButton>
-                                    )
+                                                <ListItemText
+                                                    style={{textSize: "20px"}}
+                                                >
+                                                    <h5 className="mb-3"><strong>컨버스 {val.store_title}</strong></h5>
+                                                    <p>{val.store_addreess}</p>
+                                                    <p>{val.store_contact}</p>
+                                                </ListItemText>
+                                              
+                                            </ListItemButton>
+                                        )
+                                    }
+                                    
 
                                 })
 

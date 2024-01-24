@@ -28,6 +28,14 @@ code {
   margin-top: 150px !important;
 }
 
+.mb-10{
+  margin-bottom: 100px !important;
+}
+
+.mb-15{
+  margin-bottom: 150px !important;
+}
+
 .ps-15{
   padding-left: 15rem;
 }

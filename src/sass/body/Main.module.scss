@@ -40,11 +40,26 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-   
+    
+    transition-duration: 1s;
+    transition-property: font-size;
+    transition-timing-function: linear;
+    
     white-space: pre-line;
     z-index: 100;
 
     text-align: center;
 
+    cursor: pointer;
+
+    :hover{
+        opacity: 0.7;
+    }
+}
+
+.sizeUp{
+
+    font-size: 6.5rem;
+    // transform: scale(0.75);
 }
 

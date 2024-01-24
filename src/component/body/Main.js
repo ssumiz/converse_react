@@ -18,12 +18,37 @@ const MainDiv = styled.div`
 `
 
 
+
 function Main(props) {
 
     const refImgThird = useRef();
 
     const [statThird, setStatThird] = useState(true);
 
+    useEffect(()=>{
+
+        const timer = setInterval(()=>{ titleEvent()}, 2000);
+
+        return ()=>{ clearInterval(timer);}
+        
+    },[])
+
+    const titleEvent = (()=>{
+
+        const classList = refImgThird.current.classList;
+        console.log(classList);
+
+        if(classList.contains(`${Style.sizeUp}`)){
+
+            refImgThird.current.classList.remove(`${Style.sizeUp}`);
+
+        }
+        else{
+
+            refImgThird.current.classList.add(`${Style.sizeUp}`);
+        }
+
+    })
    
 
     const fnThirdTimer = ((bool)=>{
@@ -75,7 +100,11 @@ function Main(props) {
                 <MainDiv width="30vw" className={Style.imgPosFirst}><img src="img/img5.png" alt="img1" className={Style.imgSrc} data-aos="img_1" data-aos-duration="1500" data-aos-easing="linear"/></MainDiv>
                 <MainDiv width="40vw" className={Style.imgPosSeconds}><img src="img/img2.jpg" alt="img1" className={Style.imgSrc} data-aos="fade-left" data-aos-duration="1500" data-aos-offset="500" data-aos-easing="linear"/></MainDiv>
                 <MainDiv width="40vw" className={Style.imgPosThird}><img src="img/img3.jpg" alt="img1" className={Style.imgSrc} data-aos="img_3" data-aos-duration="1500" data-aos-easing="linear"/></MainDiv>
-                <MainDiv width="50vw" className={Style.textPos} pos="absolute" ref={refImgThird}><strong>Converse<br /> X<br /> Stussy</strong></MainDiv>
+                <MainDiv 
+                
+                width="50vw" className={Style.textPos} pos="absolute" ref={refImgThird}>
+                    <strong>Converse<br /> X<br /> Stussy</strong>
+                    </MainDiv>
             </div>
         </>
     );
