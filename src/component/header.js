@@ -5,7 +5,8 @@ import Event from './heder/Event';
 import Style from "../sass/header/header.module.scss"
 
 import { useRef, useState, useEffect } from 'react';
-import { update } from 'immutable';
+
+import { Link } from "react-router-dom"
 
 
 
@@ -50,7 +51,9 @@ function Header(props) {
             <Event></Event>
 
             <div ref={refHeader} className="d-flex justify-content-center align-items-center mt-5 mb-5">
-                <a href="#">{statWheelPos ? (<img src= {"img/logo1_invert.png"} alt="로고" />):(<img src= {"img/logo1.png"} alt="로고" />)}</a>
+                <Link to="/">
+                {statWheelPos ? (<img src= {"img/logo1_invert.png"} alt="로고" />):(<img src= {"img/logo1.png"} alt="로고" />)}
+                </Link>
             </div>
         </div>
     );

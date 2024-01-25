@@ -142,6 +142,59 @@
                 127.104301829165
             ]
         }
+    ],
+
+    "Collabo":[
+        {
+            "itemIndex":0,
+            "itemName": "Converse x Stüssy Chuck 70 Black",
+            "itemPrice": "KRW 129,000",
+            "itemDesc":"A black hemp upper and unvarnished foxing blend archival Converse style with Stüssy’s West Coast DNA, nodding to the original hemp Chucks from the ‘90s.",
+            "mainImgSrc":"https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw5896d575/images/a_107/A01765C_A_107X1.jpg?sw=964",
+            "subImgSrc":[
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw550fd935/images/c_08/A01765C_C_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw2323b7e5/images/e_08/A01765C_E_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw53247a43/images/d_08/A01765C_D_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw7a50c6d7/images/g_08/A01765C_G_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw80423f20/images/h_08/A01765C_H_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwf0250062/images/i_08/A01765C_I_08X1.jpg?sw=406"
+            ],
+            "thumbNailSrc":"https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw2604cd9e/images/a_107_white/A01765C_A_107X1_White.jpg?sw=71",
+            "itemSize":[
+                240,
+                250,
+                260,
+                270,
+                280
+            ],
+            "itemColor":"Black / White / Black"
+
+        },
+        {
+            "itemIndex":1,
+            "itemName": "Converse x Stüssy Chuck 70 Pink",
+            "itemPrice": "KRW 129,000",
+            "itemDesc":"A limited-edition hemp upper Chuck 70 blends archival iconography with elevated details",
+            "mainImgSrc":"https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw99e2f4ed/images/a_107/A02052C_A_107X1.jpg?sw=964",
+            "subImgSrc":[
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb9e5225c/images/c_08/A02052C_C_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw46ab3e88/images/e_08/A02052C_E_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwccc839d7/images/d_08/A02052C_D_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw8346631e/images/g_08/A02052C_G_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwd59f5230/images/h_08/A02052C_H_08X1.jpg?sw=406",
+                "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwfdffc8ee/images/i_08/A02052C_I_08X1.jpg?sw=406"
+            ],
+            "thumbNailSrc":"https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw49eb47e1/images/a_107_white/A02052C_A_107X1_White.jpg?sw=71",
+            "itemSize":[
+                230,
+                240,
+                250,
+                260,
+                270
+            ],
+            "itemColor":"Pink / White"
+
+        }
     ]
     
 

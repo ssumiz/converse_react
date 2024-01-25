@@ -48,7 +48,7 @@ function New(props) {
 
     return (
         <div className={`${Style.container} mb-5`}>
-            <div className ="mt-5 mb-5 h1">New</div>
+            <div className ="mt-5 mb-5 h1"><strong>New</strong></div>
             
             <div className ="row" style={{width:"80%"}}>
                 

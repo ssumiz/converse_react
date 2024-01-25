@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Style from '../../sass/body/StoreInfo.module.scss'
 
 import SearchIcon from '@mui/icons-material/Search'
-import { InputBase, List, ListItem, ListItemButton,  ListItemText, Tabs } from '@mui/material';
+import { InputBase, ListItemButton,  ListItemText, Tabs } from '@mui/material';
 
 import Data from "../../data/data.json"
 
@@ -118,7 +118,7 @@ function StoreInfo(props) {
 
     return (
         <div className={`${Style.container} mt-15 mb-15`}>
-            <div className ="mt-5 mb-5 h1">Store Info</div>
+            <div className ="mt-5 mb-5 h1"><strong>Store Info</strong></div>
 
             <div className='mt-5 justify-content-center d-flex align-items-center flex-row text-center gap-5'>
                 <div className="col-6">

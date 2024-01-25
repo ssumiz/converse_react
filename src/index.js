@@ -4,6 +4,9 @@ import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+//Router
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 //fontSource
 import "@fontsource/ubuntu/700.css"
 
@@ -12,6 +15,7 @@ import "@fontsource/ubuntu/700.css"
 import Header from './component/Header'
 import Body from './component/Body';
 import Footer from './component/Footer';
+import Collabo from './component/body/Collabo';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -26,9 +30,21 @@ root.render(
  
 
   <>
-    <Header></Header>
-    <Body></Body>
-    <Footer></Footer>
+
+    <BrowserRouter>
+      <Header></Header>
+      
+      <Routes>
+        <Route path="/" element={ <Body/> }></Route>
+        <Route path="/collabo" element={ <Collabo/> }></Route>
+        
+        <Route path="*" element={ <Body/> }></Route>
+      </Routes>
+      
+      <Footer></Footer>
+    
+    </BrowserRouter>
+    
   </>
 
 );

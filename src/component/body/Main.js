@@ -7,6 +7,8 @@ import "../../sass/body/Main.scss";
 
 import AOS from "aos"
 
+import { Link } from 'react-router-dom'
+
 const MainDiv = styled.div`
 
     width: ${props => props.width || "auto"};
@@ -17,15 +19,16 @@ const MainDiv = styled.div`
     margin : 0;
 `
 
-
-
 function Main(props) {
 
-    const refImgThird = useRef();
-
-    const [statThird, setStatThird] = useState(true);
+    const refMainText = useRef();
+    const refImageFirst = useRef();
+    const refImageSecond = useRef();
+    const refImageThird = useRef();
 
     useEffect(()=>{
+
+        AOS.init();
 
         const timer = setInterval(()=>{ titleEvent()}, 2000);
 
@@ -35,76 +38,39 @@ function Main(props) {
 
     const titleEvent = (()=>{
 
-        const classList = refImgThird.current.classList;
-        console.log(classList);
+        const classList = refMainText.current.classList;
 
         if(classList.contains(`${Style.sizeUp}`)){
 
-            refImgThird.current.classList.remove(`${Style.sizeUp}`);
-
+            refMainText.current.classList.remove(`${Style.sizeUp}`);
+            refImageFirst.current.classList.remove(`${Style.ctrlShadow}`);
+            refImageSecond.current.classList.remove(`${Style.ctrlShadow}`);
+            refImageThird.current.classList.remove(`${Style.ctrlShadow}`);
         }
         else{
 
-            refImgThird.current.classList.add(`${Style.sizeUp}`);
+            refMainText.current.classList.add(`${Style.sizeUp}`);
+            refImageFirst.current.classList.add(`${Style.ctrlShadow}`);
+            refImageSecond.current.classList.add(`${Style.ctrlShadow}`);
+            refImageThird.current.classList.add(`${Style.ctrlShadow}`);
         }
 
     })
-   
-
-    const fnThirdTimer = ((bool)=>{
-        setStatThird(!bool);
-
-        if( bool ){
-            // refImgThird.current.classList.add();
-        }
-        else{
-            // refImgThird.current.classList.remove();
-        }
-    });
-
-    useEffect(()=>{
-        AOS.init();
-
-        setTimeout(()=>{
-            fnThirdTimer(statThird);
-        }, 1000)
-
-        
-
-        return ()=>{
-            clearTimeout(()=>{
-
-            })
-
-            
-        }
-    })
-
-    const [test, setTest] = useState(0);
-
-    useEffect(()=>{
-
-        console.log(`test Render ${test}`);
-        // setTest(test+1);
-        // setTest(test+1);
-        return ()=>{
-            console.log(`test Return ${test}`);
-        }
-
-    }, [test])
 
     return (
         <>
             <div className={Style.container}>
-                {/* <button onClick = { setTest(2)}>123</button> */}
-                <MainDiv width="30vw" className={Style.imgPosFirst}><img src="img/img5.png" alt="img1" className={Style.imgSrc} data-aos="img_1" data-aos-duration="1500" data-aos-easing="linear"/></MainDiv>
-                <MainDiv width="40vw" className={Style.imgPosSeconds}><img src="img/img2.jpg" alt="img1" className={Style.imgSrc} data-aos="fade-left" data-aos-duration="1500" data-aos-offset="500" data-aos-easing="linear"/></MainDiv>
-                <MainDiv width="40vw" className={Style.imgPosThird}><img src="img/img3.jpg" alt="img1" className={Style.imgSrc} data-aos="img_3" data-aos-duration="1500" data-aos-easing="linear"/></MainDiv>
-                <MainDiv 
                 
-                width="50vw" className={Style.textPos} pos="absolute" ref={refImgThird}>
-                    <strong>Converse<br /> X<br /> Stussy</strong>
-                    </MainDiv>
+                <MainDiv width="30vw" className={Style.imgPosFirst} ref={refImageFirst}><img src="img/img5.png" alt="img1" className={Style.imgSrc} data-aos="img_1" data-aos-duration="1500" data-aos-easing="linear"/></MainDiv>
+                <MainDiv width="40vw" className={Style.imgPosSeconds} ref={refImageSecond}><img src="img/img2.jpg" alt="img1" className={Style.imgSrc} data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200" data-aos-easing="linear"/></MainDiv>
+                <MainDiv width="40vw" className={Style.imgPosThird} ref={refImageThird}><img src="img/img3.jpg" alt="img1" className={Style.imgSrc} data-aos="img_3" data-aos-duration="1500" data-aos-easing="linear"/></MainDiv>
+                <Link to="/collabo" style={{color:"black"}}>
+                    <MainDiv
+                    width="50vw" className={Style.textPos} pos="absolute" ref={refMainText}>
+                        <strong>Converse<br /> X<br /> Stussy</strong>
+                        </MainDiv>
+                </Link>
+               
             </div>
         </>
     );
