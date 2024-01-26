@@ -118,7 +118,7 @@ function StoreInfo(props) {
 
     return (
         <div className={`${Style.container} mt-15 mb-15`}>
-            <div className ="mt-5 mb-5 h1"><strong>Store Info</strong></div>
+            <div className ="mt-5 mb-5 h1 titleShadow"><strong>Store Info</strong></div>
 
             <div className='mt-5 justify-content-center d-flex align-items-center flex-row text-center gap-5'>
                 <div className="col-6">

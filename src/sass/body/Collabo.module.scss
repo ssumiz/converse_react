@@ -13,3 +13,34 @@
     flex-direction: column;
     
 }
+
+.ItemData{
+
+    position: fixed;
+    top:20%;
+    right:5%;
+    // width:100%;
+    // height:100%;
+
+}
+
+.marginTopCtrl{
+
+    top:10% !important;
+}
+
+.addCartBtn{
+
+    background-color: black !important;
+
+    width:100%;
+
+    :hover{
+
+
+        background-color: red !important;
+
+        
+    }
+
+}
